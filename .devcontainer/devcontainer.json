@@ -1,0 +1,19 @@
+{
+	"name": "RISC-V Chisel Book Environment",
+	"image": "ghcr.io/ashtkn/riscv-chisel-book-devcontainer:v1.0.0",
+	"workspaceFolder": "/src",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/src,type=bind,consistency=cached",
+	"mounts": [
+		"source=${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"editorconfig.editorconfig",
+				"scala-lang.scala",
+				"ms-azuretools.vscode-docker",
+				"streetsidesoftware.code-spell-checker"
+			]
+		}
+	}
+}
